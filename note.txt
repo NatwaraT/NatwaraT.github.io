@@ -2,4 +2,6 @@ background-color: #7EC8E3;  (3226) พื้นหลังแนวนอน
 
 
 #wrapper > section > header h1:before, #wrapper > section > header h2:before {
-	background: #000000; (3590) พื้นหลังแนวตั้ง
+	background: #000000; (3590) พื้นหลังแนวตั้ง]
+
+                        <input type="button" onclick="history.back()" value="BACK">
