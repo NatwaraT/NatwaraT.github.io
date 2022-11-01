@@ -34,7 +34,7 @@ background-color: #7EC8E3;  (3226) พื้นหลังแนวนอน
 
 
 ข้อย่อย 
-<section>
+						<section>
 							<header>
 								<h2>STRING</h2>
 								
@@ -63,3 +63,12 @@ background-color: #7EC8E3;  (3226) พื้นหลังแนวนอน
 
 •
 <b style="color:tomato"></b>
+
+
+รูป
+
+<div class="gallery">
+											<a href="images/p1/p1-1.png" class="landscape"><img src="images/p1/p1-1.png" alt="" /></a>
+											<a href="images/p1/p1-2.png"><img src="images/p1/p1-2.png" alt="" /></a>
+											<a href="images/p1/p1-3.png"><img src="images/p1/p1-3.png" alt="" /></a>
+										</div>
