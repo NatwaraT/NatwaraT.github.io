@@ -5,3 +5,33 @@ background-color: #7EC8E3;  (3226) พื้นหลังแนวนอน
 	background: #000000; (3590) พื้นหลังแนวตั้ง]
 
                         <input type="button" onclick="history.back()" value="BACK">
+
+
+หัวข้อ
+
+						<section>
+							<header>
+								<h2>VARIABLES</h2>
+								
+							</header>
+							<div class="content">
+							
+							</div>
+						</section>
+
+เนื้อหาา
+						<section>
+										<header>
+											<h3>Reserved Word</h3>
+											<!-- <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p> -->
+										</header>
+										<div class="content">
+											<div class="gallery">
+												<img src="images/p1-6.png" alt="" width="100%" />
+												<p><b style="color:tomato">*** Function name also not recommend</b></p>
+											</div>
+										</div>
+									</section>
+ย่อหน้า
+
+<p style="text-indent: 2.5em;">  </p>
