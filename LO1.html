@@ -30,7 +30,14 @@
 						<form>
 							<input type="button" value="Go back!" onclick="history.back()">
 						</form>
+
+						<ul class="actions">
+							<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+						</ul>
 						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="images/logo1.png" alt="" /></span>
+						</div>
 
 						
 					
@@ -38,7 +45,7 @@
 					
 
 						
-						<section>
+						<section id="first">
 							<header>
 								<h2>COMPUTER AND PROGRAM</h2>
 							</header>
@@ -355,48 +362,7 @@
 							</div>
 						</section>
 
-					
-						<section>
-							<header>
-								<h2>VARIABLES</h2>
-								
-							</header>
-							<div class="content">
-								•Variable are: Storage location that have a name, Name-value pairs
-								<br> fruit = ‘apple’
-								<br> fruit = ‘orange’
-								<br> Note: * Pick variable name that represent data that variable will hold
-
-								<!-- Section -->
-									<section>
-										<header>
-											<h3>Valid Variable Names</h3>
-										</header>
-										<div class="content">
-											
-											• Case sensitive. (Case matters!)
-										<br>	Fruit and fruit are different variable
-										<br>	• Must start with a letter.
-										<br>	Can contain numbers.
-										<br>	• Underscores allowed in variable names
-										<br>	• Not allowed: + -
-											
-											
-										</div>
-									</section>
-
-
-									<section>
-										<header>
-											<h3>Reserved Word</h3>
-										</header>
-										<div class="content">
-											
-										</div>
-									</section>
-							</div>
-						</section>
-
+		
 
 						<section>
 							<header>
@@ -472,18 +438,291 @@
 											uple
 											Later lessons
 											Dictionary Set
-											
-											
-										</p>
-										
-										
-
+									
 
 									</div>
 								</section>
 
 							</div>
 						</section>
+
+
+
+						<section>
+							<header>
+								<h2>NUMBERS</h2>							
+							</header>
+							<div class="content">
+								<b style="color:tomato">Use numbers directly in your source code </b>
+							<br>	Do not use quotation marks as they are for strings.
+
+							<br> integer = 42
+							<br> float = 4.2
+							<br> a = b = c = d = 0.0
+
+							<br> <strong>Note:</strong> 
+							<br><b style="color:tomato"> * Pick variable name that represent data that variable will hold</b>
+							</div>
+						</section>
+
+						
+
+						<section>
+							<header>
+								<h2>BOOLEAN</h2>
+								
+							</header>
+							<div class="content">
+								A Boolean variable can reference one of two values: True or False. Boolean variables are commonly used as flags, which indicate whether specific conditions exist.
+							<br>  hungry = True
+							<br> sleepy = False
+							</div>
+						</section>
+
+						
+						<section>
+							<header>
+								<h2>STRING</h2>
+								
+							</header>
+							<div class="content">
+							
+								<section>
+									<header>
+										<h3>VARIABLES AND STRING</h3>
+									</header>
+									<div class="content">
+									<strong> Strings </strong>	
+									<br> Represent text 
+									<br> Surrounded by quotes 
+									
+									<br>fruit = ‘apple’
+									<br>fruit = “apple”
+									<br>string1, string2, string3 = '', 'Knife', 'Hammer Dance'
+
+									<br><strong>Note:</strong>
+									<br><b style="color:tomato">* Strings are start with ‘ or “ and end with ’or ”</b>
+
+									</div>
+								</section>
+
+
+								<section>
+									<header>
+										<h3>Using Quotes within Strings</h3>
+									</header>
+									<div class="content">
+									sentence = 'She said, "That is a great tasting apple!" '
+									<br>  sentence = " That's a great tasting apple! "
+									<br> double = "She said, \"That 's a great tasting apple! \" "
+									<br> single = 'She said, "That\'s a great tasting apple! " '
+									</div>
+								</section>
+
+							</div>
+						</section>
+
+
+						<section>
+							<header>
+								<h2>PYTHON OPERATORS</h2>
+								
+							</header>
+							<div class="content">
+								What are operators in python?
+							<br> Operators are special <b style="color:tomato"> symbols</b> in Python that <b style="color:tomato">carry out arithmetic or logical computation</b> . The value that the operator operates on is called the operand.
+							</div>
+						</section>
+
+						<section>
+							<header>
+								<h2>EXPRESSION OPERATOR AND OPERAND</h2>
+								
+							</header>
+							<div class="content">
+							<strong>	y =  2<sup>2</sup>+ 2x + 1 </strong>
+								
+							<br>	y,x,1 is operand 
+							<br>	=, +, is operator
+							<br>	y =  2<sup>2</sup>+ 2x + 1     is expression
+								
+							</div>
+						</section>
+
+						<section>
+							<header>
+								<h3>ARITHMETIC OPERATORS</h3>
+							</header>
+							<div class="content">
+								<div class="gallery">
+									<img src="images/p1-7.png" alt="" width="110%" />
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<header>
+								<h3>COMPARISON OPERATORS</h3>
+							</header>
+							<div class="content">
+								<div class="gallery">
+									<img src="images/p1-8.png" alt="" width="110%" />
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<header>
+								<h3>LOGICAL OPERATORS</h3>
+							</header>
+							<div class="content">
+								<div class="gallery">
+									<img src="images/p1-9.png" alt="" width="110%" />
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<header>
+								<h3>BITWISE OPERATORS</h3>
+
+							</header>
+							<div class="content">
+								<p> In the table below: Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)
+								</p>
+								<div class="gallery">
+									<img src="images/p1-10.png" alt="" width="110%" />
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<header>
+								<h3>ASSIGNMENT OPERATORS</h3>
+							</header>
+							<div class="content">
+								<div class="gallery">
+									<img src="images/p1-11.png" alt="" width="110%" />
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<header>
+								<h3>IDENTITY OPERATORS</h3>
+							</header>
+							<div class="content">
+								<p>is and is not are the identity operators in Python. They are used to check if two values (or variables) are located on the same part of the memory. Two variables that are equal does not imply that they are identical.</p>
+								<div class="gallery">
+									<img src="images/p1-12.png" alt="" width="110%" />
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<header>
+								<h3>MEMBERSHIP OPERATORS</h3>
+							</header>
+							<div class="content">
+								
+								<p>in and not in are the membership operators in Python. They are used to test whether a value or variable is found in a sequence (string, list, tuple, set and dictionary).
+								<br>	In a dictionary we can only test for presence of key, not the value.</p>
+								<div class="gallery">
+									<img src="images/p1-13.png" alt="" width="100%" />
+								</div>
+							</div>
+						</section>
+
+
+
+						<section>
+							<header>
+								<h2>INPUT</h2>
+								
+							</header>
+							<div class="content">
+								Programs commonly need to read input typed by the user on the keyboard. We will use the Python functions to do this.
+							<br>	Python's built-in input function to read input from the keyboard. The input function reads a piece of data that has been entered at the keyboard and returns that data, as a string, back to the program. You normally use the input function in an assignment statement that follows this general format:
+								<br> <b style="color:tomato"> variable = input(prompt)</b>
+							</div>
+							
+						</section>
+						<section>
+							<header>
+								<h3>INPUT NUMBERS</h3>
+							</header>
+							<div class="content">
+								<p>The <b style="color:tomato"> input function always returns the users input as a string</b>, even  if the user enters numeric data. For example,
+								 suppose you call the input function, type the number 87, and press the Enter key. 
+								 The value that is returned from the input function is the string '87'. This can be
+								  a problem if you want to use the value in a math operation. Math operations can be 
+								  performed only on numeric values, not strings.</p>
+								<div class="gallery">
+									<img src="images/p1-14.png" alt="" width="100%" />
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<header>
+								<h3>INPUT</h3>
+							</header>
+							<div class="content">
+								Method 1
+							<br><b style="color:tomato">
+							string_value = input('How many hours did you work? ') hours = int(string_value)</b>	
+							<br>	Method 2
+							<br><b style="color:tomato">
+							hours = int(input('How many hours did you work? '))</b>	
+									
+							</div>
+						</section>
+
+				
+
+						<section>
+							<header>
+								<h2>COMMENTS</h2>
+								
+							</header>
+							<div class="content">
+								Comments are <b style="color:tomato"> notes of explanation</b> that document lines or sections of a program. Comments are part of the program, but the Python interpreter ignores them. They are intended for people who may be reading the source code.
+							</div>
+
+							<section>
+								<header>
+									<h3>LESSON SUMMARY</h3>
+								</header>
+								<div class="content">
+									
+								<br>	• Computer is a hardware
+								<br>	• Computer can do varieties of things coz it can Program
+								<br>	• A program is a set of instructions that a computer follows to perform a task.
+								<br>	• All data that is stored in a computer is converted to sequences of 0s and 1s.
+								<br>	• A computer's memory is divided into tiny storage locations known as bytes     
+								<br>	• PU can only understand instructions that are written in machine language.
+								<br>	• The first assembly language was most likely that developed in the 1940s at Cambridge University.
+								<br>	• High-level languages created in the 1950s
+								<br>	• Python is High-level language
+								<br>	• print('Hello, World!')
+								<br>	• Compiler compile the whole program (codes)
+								<br>	• Interpreter translate 1 instruction at a time   
+								<br>	• Assign values to variables using the variable_name = value syntax.
+								<br>	• Data type: Integer, Float, Boolean, String, Strings are surrounded by quotation marks. Expression, Operator, Operand
+								<br>	• variable = input(prompt)  
+								<br>	• Single line comments begin with an octothorp (#). 
+								<br>	• Multi-line comments are enclosed in triple quotes (""").
+								
+								
+								
+								
+								</div>
+							</section>
+	
+						</section>
+						
+
+
 
 						
 						<section>
@@ -503,13 +742,6 @@
 									<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO8.html"> LECTURE - 08 </a></strong>  DICTIONARY AND SET </li>
 									<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO9.html"> LECTURE - 09 </a></strong>  PYGAME-ZERO </li>
 		
-									
-									
-									<!-- <li class="icon solid fa-bolt">Etiam adipiscing</li>
-									<li class="icon solid fa-signal">Libero nullam</li>
-									<li class="icon solid fa-cog">Blandit condimentum</li>
-									<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-									<li class="icon solid fa-code">Nibh amet venenatis</li> -->
 								</ul>
 							</div>
 						</section>
