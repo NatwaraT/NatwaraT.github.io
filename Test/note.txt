@@ -77,3 +77,5 @@ background-color: #7EC8E3;  (3226) พื้นหลังแนวนอน
 											<a href="images/p1/p1-2.png"><img src="images/p1/p1-2.png" alt="" /></a>
 											<a href="images/p1/p1-3.png"><img src="images/p1/p1-3.png" alt="" /></a>
 										</div>
+
+										<input type=button onClick="parent.location='index.html'" value='click here'>
