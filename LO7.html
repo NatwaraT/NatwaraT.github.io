@@ -1,89 +1,589 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>LECTURE - 07</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="style.css">
 
-		<style>
-			#more {display: none;}
-		</style>
+<head>
+	<title>LECTURE - 07</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="style.css">
 
-	</head>
-	<body class="is-preload">
+	<style>
+		#more {
+			display: none;
+		}
+	</style>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+</head>
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
+<body class="is-preload">
 
-							<h1>07</h1>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<h2>LISTS AND TUPLES</h2>
-							<form>
-								<input type="button" value="Go back!" onclick="history.back()">
-							</form>
-						</header>
+		<!-- Intro -->
+		<section class="intro">
+			<header>
 
-						
-					
-					</section> 
-					
+				<h1>07</h1>
+
+				<h2>LISTS AND TUPLES</h2>
+				<form>
+					<input type="button" value="Go back!" onclick="history.back()">
+				</form>
+			</header>
 
 
-						
-				<!-- Section -->
+
+		</section>
+
+
+
+		<section>
+			<header>
+				<h2>LISTS</h2>
+
+			</header>
+			<div class="content">
+
 				<section>
 					<header>
-						<h2>LECTURE</h2>
+						<h3>Introduction</h3>
 					</header>
 					<div class="content">
-						<!-- <p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p> -->
-						<ul class="feature-icons">
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO1.html"> LECTURE - 01 </a></strong>  DATA TYPES, VARIABLES AND EXPRESSION </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO2.html"> LECTURE - 02 </a></strong>  IF-ELIF-ELSE DRAW.IO </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO3.html"> LECTURE - 03 </a></strong>  REPETITION WHILE FOR </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO4.html"> LECTURE - 04 </a></strong>  STRING </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO5.html"> LECTURE - 05 </a></strong>  FUNCTIONS </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO6.html"> LECTURE - 06 </a></strong>  FILES AND EXCEPTIONS </li>
-							<!-- <li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO7.html"> LECTURE - 07 </a></strong>  LISTS AND TUPLES </li> -->
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO8.html"> LECTURE - 08 </a></strong>  DICTIONARY AND SET </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO9.html"> LECTURE - 09 </a></strong>  PYGAME-ZERO </li>
+						<b>SEQUENCE TYPES</b>
+						<p>The fundamental <b style="color:tomato">
+								sequence types: lists and tuples</b>. Both lists and tuples are sequences that can hold
+							various types of data. The difference between lists and tuples is simple:
+							<br>• <b style="color:tomato">
+								List </b>is mutable, which means that a program can change its contents.
+							<br>• <b style="color:tomato">Tuple</b> is immutable, which means that once it is created,
+							its contents cannot be changed.
+						</p>
+					</div>
+				</section>
 
-							
-							
-							<!-- <li class="icon solid fa-bolt">Etiam adipiscing</li>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>LISTS</h3>
+			</header>
+			<div class="content">
+				<p>A list is <b style="color:tomato">
+						an object that contains multiple data items</b>. Lists are <b style="color:tomato">
+						mutable</b>, which means that <b style="color:tomato"> their
+						contents can be changed </b>during a program's execution. Lists are
+					<b style="color:tomato"> dynamic data structures</b>, meaning
+					that <b style="color:tomato">items may be added to them or removed from them</b> .
+					You can use indexing, slicing, and various
+					methods to work with lists in a program.
+				</p>
+
+				<p>
+					<br> • List: an object that contains multiple data items
+					<br> - Element: An item in a list
+					<br> - Format:list = [item1, item2, etc.]
+					<br> - Can hold items of different types
+					<br> • print function can be used to display an entire list
+					<br> • list() function can convert certain types of objects to lists
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>INTROLIST.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>INTROLIST.PY</b></p>
+					<img src="images/p7/p7-1.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>LISTS</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>List Methods and Useful Built-in Functions</h3>
+					</header>
+					<div class="content">
+						<p><b>LISTS OPERATOR</b>
+							<br> • <b style="color:tomato">Repetition operator</b>: makes multiple copies of a list and
+							joins them together
+							<br> - The * symbol is a repetition operator when applied to a sequence and an integer
+							<br> - Sequence is left operand, number is right
+							<br> - Generalformat: <b> list * n </b>
+							<br> • You can iterate over a list using a for loop
+							<br> - Format: <b>for x in list</b> :
+						</p>
+
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>LISTTEST.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>LISTTEST.PY</b></p>
+					<img src="images/p7/p7-2.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>BARISTA_PAY.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>BARISTA_PAY.PY</b></p>
+					<img src="images/p7/p7-3.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+
+		<section>
+			<header>
+				<h3>LIST METHODS AND USEFUL BUILT-IN FUNCTIONS</h3>
+			</header>
+			<div class="content">
+				<p>• An <b>IndexError</b> exception is raised if an invalid index is used
+					<br> • <b>len </b> function: returns the length of a sequence such as a list
+					<br> - Example: <b> size = len(my_list)</b>
+					<br> - Returns the number of elements in the list, so <b style="color:tomato"> the index of last
+						element is len(list)-1</b>
+					<br> - Can be used to prevent an <b> IndexError</b> exception when iterating over a list with a loop
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>LISTOPERATOR.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>LISTOPERATOR.PY</b></p>
+					<img src="images/p7/p7-4.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>LIST METHODS AND USEFUL BUILT-IN FUNCTIONS</h3>
+			</header>
+			<div class="content">
+				<p> • You can use the in operator to determine whether an item is contained in a list
+					<br>- Generalformat: <b> item in list</b>
+					<br>- Returns <b> True</b> if the item is in the list, or <b> False</b> if it is not in the list
+					<br>• Similarly you can use the <b> not in</b> operator to determine whether an item is not in a
+					list
+					<br>• <b> append(item)</b>: used to add items to a list – <b>item </b>is appended to the end of the
+					existing list
+					<br>• <b> index(item)</b>: used to determine where an item is located in a list
+					<br> - Returns the index of the first element in the list containing item
+					<br> - Raises <b> ValueError</b> exception if <b> item </b>not in the list
+					<br>• <b> insert(index,item)</b>: used to insert item at position index in the list
+					<br>• <b>sort()</b>: used to sort the elements of the list in ascending order
+					<br>• <b>remove(item)</b>: removes the first occurrence of item in the list
+					<br>• <b>reverse()</b>: reverses the order of the elements in the list
+					<br>• <b> del statement</b>:removesanelementfromaspecificindex in a list
+					<br>- Generalformat: <b> del list[i]</b>
+					<br>• <b> min</b> and <b> max</b> functions: built-in functions that returns the item
+					that has the lowest or highest value in a sequence
+					<br>- The sequence is passed as an argument
+				</p>
+				<img src="images/p7/p7-5.png" alt="" width="100%" />
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>LISTMETHODS.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>LISTMETHODS.PY</b></p>
+					<img src="images/p7/p7-6.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>LISTS</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>Two-Dimensional Lists</h3>
+					</header>
+					<div class="content">
+						<b>TWO-DIMENSIONAL LISTS</b>
+						<p>
+
+							<br>• Two-dimensional list: a list that contains other lists as its elements
+							<br>- Also known as nested list
+							<br>- Common to think of two-dimensional lists as having rows and columns
+							<br>- Useful for working with multiple sets of data
+							<br>• To process data in a two-dimensional list need to use two indexes
+							<br>• Typically use nested loops to process
+						</p>
+						<img src="images/p7/p7-7.png" alt="" width="100%" />
+						<p><b>students = [['Joe','Kim'],['Sam','Sue'],['Kelly', 'Chris']]</b></p>
+						<img src="images/p7/p7-8.png" alt="" width="100%" />
+						<img src="images/p7/p7-9.png" alt="" width="100%" />
+						<img src="images/p7/p7-10.png" alt="" width="100%" />
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>TUPLES</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>Introduction</h3>
+					</header>
+					<div class="content">
+						<b>TUPLES</b>
+						<p> • Tuple: an immutable sequence
+							<br> • Very similar to a list
+							<br> • Once it is created it cannot be changed
+							<br> • Format: <b>tuple_name = (item1, item2)</b>
+							<br> • Tuples support operations as lists
+							<br> • Subscript indexing for retrieving elements Methods such as <b> index</b>
+							<br> • Built in functions such as <b>len, min, max </b>
+							Slicing expressions
+							<br> • The <b>in</b>, +,and* operators
+							<br> • Tuples do not support the methods:
+							<br> • <b>append</b>
+							<br> • <b>remove</b>
+							<br> • <b>insert</b>
+							<br> • <b>reverse</b>
+							<br> • <b>sort</b>
+							<br> • <b>Advantages</b> for using tuples over lists:
+							<br> - Processing tuples is faster than processing lists
+							<br> - Tuples are safe
+							<br> - Some operations in Python require use of tuples
+							<br> • <b>list()</b> function: converts tuple to list
+							<br> • <b> tuple()</b> function: converts list to tuple
+						</p>
+						<img src="images/p7/p7-11.png" alt="" width="100%" />
+
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>LISTS TO FILE</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>
+							Write Lists and Read Lists from File</h3>
+					</header>
+				</section>
+
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>WRITELINES.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>WRITELINES.PY</b></p>
+					<img src="images/p7/p7-12.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>READLINES.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>READLINES.PY</b></p>
+					<img src="images/p7/p7-13.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>MATHPLOT</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>
+							Introduction</h3>
+					</header>
+					<div class="content">
+						<b>MATHPLOT</b>
+						<p>
+							<br> • The <b> matplotlib </b>package is a library for creating two- dimensional charts and
+							graphs.
+							<br> • It is not part of the standard Python library, so you will have to install it
+							separately, after you have installed Python on your systemThe <b> matplotlib </b>package is
+							a
+							library for creating two-
+							dimensional charts and graphs.
+						</p>
+						<img src="images/p7/p7-14.png" alt="" width="100%" />
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>LINE_GRAPH1.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>LINE_GRAPH1.PY</b></p>
+					<img src="images/p7/p7-15.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>LINE_CHART2.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>LINE_GRAPH2 .PY</b></p>
+					<img src="images/p7/p7-16.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>LINE GRAPH</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>LINE GRAPH</b></p>
+					<img src="images/p7/p7-17.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>BAR_CHART1.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>BAR_CHART1.PY</b></p>
+					<img src="images/p7/p7-18.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>PLOT BAR CHART</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>PLOT BAR CHART</b></p>
+					<img src="images/p7/p7-19.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>BAR_CHART1.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p>• The bar function has a color parameter that you can use to change the colors of the bars.
+						<br> • The argument that you pass into this parameter is a tuple containing a series of color
+						codes.
+					</p>
+					<img src="images/p7/p7-20.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>BAR_CHART3.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>BAR_CHART3.PY</b></p>
+					<img src="images/p7/p7-21.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>PLOT PINE CHART</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>PLOT PINE CHART</b></p>
+					<img src="images/p7/p7-22.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>PIE_CHART1.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>PIE_CHART1.PY</b></p>
+					<img src="images/p7/p7-23.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>SUMMARY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p>Lists, including:
+						<br>- Repetition and concatenation operators Indexing
+						<br>- Techniques for processing lists
+						<br>- Slicing and copying lists
+						<br>- List methods and built-in functions for lists Two-dimensional lists
+						<br>Tuples, including: Immutability
+						<br>- Difference from and advantages over lists
+						<br>- Plotting charts and graphs with the <b> matplotlib </b>Package</p>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>LECTURE</h2>
+			</header>
+			<div class="content">
+				<!-- <p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p> -->
+				<ul class="feature-icons">
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO1.html"> LECTURE - 01
+							</a></strong> DATA TYPES, VARIABLES AND EXPRESSION </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO2.html"> LECTURE - 02
+							</a></strong> IF-ELIF-ELSE DRAW.IO </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO3.html"> LECTURE - 03
+							</a></strong> REPETITION WHILE FOR </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO4.html"> LECTURE - 04
+							</a></strong> STRING </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO5.html"> LECTURE - 05
+							</a></strong> FUNCTIONS </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO6.html"> LECTURE - 06
+							</a></strong> FILES AND EXCEPTIONS </li>
+					<!-- <li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO7.html"> LECTURE - 07 </a></strong>  LISTS AND TUPLES </li> -->
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO8.html"> LECTURE - 08
+							</a></strong> DICTIONARY AND SET </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO9.html"> LECTURE - 09
+							</a></strong> PYGAME-ZERO </li>
+
+
+
+					<!-- <li class="icon solid fa-bolt">Etiam adipiscing</li>
 							<li class="icon solid fa-signal">Libero nullam</li>
 							<li class="icon solid fa-cog">Blandit condimentum</li>
 							<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
 							<li class="icon solid fa-code">Nibh amet venenatis</li> -->
-						</ul>
-					</div>
-				</section>
-
-				
+				</ul>
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>						
-			
-		
+		</section>
 
 
-			
-			
-		
-	</body>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+
 </html>
