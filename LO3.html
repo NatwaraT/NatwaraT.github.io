@@ -1,306 +1,340 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>LECTURE - 03</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="style.css">
 
-		<style>
-			#more {display: none;}
-		</style>
+<head>
+	<title>LECTURE - 03</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="style.css">
 
-	</head>
-	<body class="is-preload">
+	<style>
+		#more {
+			display: none;
+		}
+	</style>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+</head>
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
+<body class="is-preload">
 
-							<h1>03</h1>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<h2>REPETITION WHILE FOR</h2>
-							<form>
-								<input type="button" value="Go back!" onclick="history.back()">
-							</form>
-						</header>
+		<!-- Intro -->
+		<section class="intro">
+			<header>
 
-						
-					
-					</section> 
-					
+				<h1>03</h1>
 
-
-					
-					<section>
-						<header>
-							<h2>REPETITION STRUCTURES</h2>
-							
-						</header>
-						
-					</section>
-					
-					<section>
-						<header>
-							<h3>PROGRAM FLOW</h3>
-						</header>
-						<div class="content">
-							<div class="gallery">
-								<p>PROGRAM FLOW</p>
-								<img src="images/p3/p3-1.png" alt="" width="100%" />
-								
-							</div>
-						</div>
-					</section>
-						
-					<section>
-						<header>
-							<h3>REPETITION STRUCTURE</h3>
-						</header>
-						<div class="content">
-							<div class="gallery">
-								<p>REPETITION STRUCTURE</p>
-								<img src="images/p3/p3-2.png" alt="" width="100%" />
-								<p>This code is one long sequence structure  <b style="color:tomato">containing a lot of duplicated code</b>. There are several disadvantages to this approach, including the following:
-								<br>• The duplicated code <b style="color:tomato"> makes the program large</b>.
-								<br>• Writing a long sequence of statements can be <b style="color:tomato"> time consuming</b>.
-								<br>• If part of the duplicated code has to be corrected or changed then the <b style="color:tomato"> correction or change has to be done many times</b>.
-								<br> A repetition structure <b style="color:tomato"> causes a statement or set of statements to execute repeatedly</b>.In this course, we will look at two broad categories of loops: condition-controlled and count-controlled.
-							</p>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<header>
-							<h2>CONDITION-CONTROLLED LOOP</h2>
-							
-						</header>
-						<div class="content">
-						
-							<section>
-								<header>
-									<h3>while</h3>
-								</header>
-								<div class="content">
-									CONDITION-CONTROLLED LOOP
-									<p>A re A <b style="color:tomato">condition-controlled loop</b>  uses a true/false condition to control the number of times that it repeats.
-										In Python you <b style="color:tomato">use the while statement to write a condition-controlled loop</b></p>
-										
-									<img src="/images/p3/p3-3.png" alt="" width="100%">
-									<img src="/images/p3/p3-4.png" alt="" width="100%">
-									<img src="/images/p3/p3-5.png" alt="" width="100%">
-									<img src="/images/p3/p3-6.png" alt="" width="100%">
-									<img src="/images/p3/p3-7.png" alt="" width="100%">
-								
-									<b style="color:tomato">**all of the statements in the block are indented</b>
-								</div>
-							</section>
-
-						</div>
-					</section>
-
-
-					<section>
-						<header>
-							<h2>COUNT-CONTROLLED LOOP</h2>
-							
-						</header>
-						<div class="content">
-						
-							<section>
-								<header>
-									<h3>for</h3>
-								</header>
-								<div class="content">
-									COUNT-CONTROLLED LOOP
-									<p>A <b style="color:tomato">count-controlled loop</b>  repeats a specific number of times. In Python you <b style="color:tomato"> use the for statement to write a count- controlled loop</b>.</p>
-									<img src="/images/p3/p3-8.png" alt="" width="100%">
-									<b style="color:tomato">**all of the statements in the block are indented</b>
-									<img src="/images/p3/p3-9.png" alt="" width="100%">
-									<img src="/images/p3/p3-10.png" alt="" width="100%">
-									<img src="/images/p3/p3-11.png" alt="" width="100%">
-									<img src="/images/p3/p3-12.png" alt="" width="100%">
-									<img src="/images/p3/p3-13.png" alt="" width="100%">
-									<img src="/images/p3/p3-14.png" alt="" width="100%">
-									<img src="/images/p3/p3-15.png" alt="" width="100%">
-									<img src="/images/p3/p3-16.png" alt="" width="100%">
-									<img src="/images/p3/p3-17.png" alt="" width="100%">
-									<img src="/images/p3/p3-18.png" alt="" width="100%">
-									<img src="/images/p3/p3-19.png" alt="" width="100%">
-									<img src="/images/p3/p3-20.png" alt="" width="100%">
-
-								</div>
-							</section>
-
-						</div>
-					</section>
-
-
-					<section>
-						<header>
-							<h2>CALCULATING RUNNING TOTAL</h2>
-							
-						</header>
-						<div class="content">
-						<p>
-							A running total is <b style="color:tomato">a sum of numbers that accumulates with each iteration of a loop</b> . The variable used to keep the running total is called an <b style="color:red"> accumulator</b>.
-						<br>	Programs that calculate the total of a series of numbers typically use two elements:
-						<br> • A <b style="color:tomato">loop that reads each number in the series</b>.
-						<br> • A <b style="color:tomato">variable that accumulates the total of the numbers as they are read</b>.</p>
-						<img src="/images/p3/p3-21.png" alt="" width="100%">
-						<img src="/images/p3/p3-22.png" alt="" width="100%">
-						<img src="/images/p3/p3-23.png" alt="" width="100%">
-						<img src="/images/p3/p3-24.png" alt="" width="100%">
-						<img src="/images/p3/p3-25.png" alt="" width="100%">
-						</div>
-					</section>
+				<h2>REPETITION WHILE FOR</h2>
+				<form>
+					<input type="button" value="Go back!" onclick="history.back()">
+				</form>
+			</header>
 
 
 
-					<section>
-						<header>
-							<h2>SENTINELS</h2>
-							
-						</header>
-						<div class="content">
-							A sentinel is <b style="color:tomato">a special value that marks the end of a sequence of values</b>.
-						<br> • Simply  <b style="color:tomato">ask the user, at the end of each loop iteration</b>, if there is another value to process. If the sequence of values is long, however, asking this question at the end of each loop iteration might make the program cumbersome for the user.
-						<br> • <b style="color:tomato">Ask the user at the beginning of the program how many items are in the sequence</b>. This might also inconvenience the user, however. If the sequence is very long, and the user does not know the number of items it contains, it will require the user to count them.</p>
-						<img src="/images/p3/p3-26.png" alt="" width="100%">
-						<img src="/images/p3/p3-27.png" alt="" width="100%">
-						<img src="/images/p3/p3-28.png" alt="" width="100%">
-						</div>
-					</section>
-					
-					<section>
-						<header>
-							<h2>INPUT VALIDATION LOOPS</h2>
-							
-						</header>
-						<div class="content">
-							Input validation is the process of inspecting data that has been input to a program, to make sure it is valid before it is used in a computation. Input validation is commonly done with <b style="color:tomato">a loop that iterates as long as an input variable references bad data</b> .
-							<img src="/images/p3/p3-29.png" alt="" width="100%">
-							<img src="/images/p3/p3-30.png" alt="" width="100%">
-							<img src="/images/p3/p3-31.png" alt="" width="100%">
-						</div>
-					</section>
-					
-					<section>
-						<header>
-							<h2>NESTED LOOPS</h2>
-							
-						</header>
-						<div class="content">
-							A <b style="color:tomato">loop that is inside another loop</b> is called a <b style="color:tomato">nested loop</b>.							
-							<img src="/images/p3/p3-32.png" alt="" width="100%">
-						</div>
-					</section>
-					
-					<section>
-						<header>
-							<h2>PASS, CONTINUE, BREAK</h2>
-							
-						</header>
-						
-					</section>
-
-					<section>
-						<header>
-							<h3>CONTINUE</h3>
-						</header>
-						<div class="content">
-							<div class="gallery">
-								<p>CONTINUE</p>
-								<img src="images/p3/p3-33.png" alt="" width="100%" />
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<header>
-							<h3>BREAK</h3>
-						</header>
-						<div class="content">
-							<div class="gallery">
-								<p>BREAK</p>
-								<img src="images/p3/p3-34.png" alt="" width="100%" />
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<header>
-							<h3>PASS</h3>
-						</header>
-						<div class="content">
-							<div class="gallery">
-								<p>PASS</p>
-								<img src="images/p3/p3-35.png" alt="" width="100%" />
-								<p>We generally use it as a placeholder.
-									<br> Suppose  we have a loop or a function that is not implemented yet, 
-									but <b style="color:tomato">we want to implement it in the future.They cannot have an empty body</b>. The interpreter would complain. So, 
-									we use the <b style="color:tomato"> pass</b> statement to construct a body that does nothing.</p>
-							</div>
-						</div>
-					</section>
+		</section>
 
 
 
 
+		<section>
+			<header>
+				<h2>REPETITION STRUCTURES</h2>
 
-				<!-- Section -->
+			</header>
+
+		</section>
+
+		<section>
+			<header>
+				<h3>PROGRAM FLOW</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p>PROGRAM FLOW</p>
+					<img src="images/p3/p3-1.png" alt="" width="100%" />
+
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>REPETITION STRUCTURE</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p>REPETITION STRUCTURE</p>
+					<img src="images/p3/p3-2.png" alt="" width="100%" />
+					<p>This code is one long sequence structure <b style="color:tomato">containing a lot of duplicated
+							code</b>. There are several disadvantages to this approach, including the following:
+						<br>• The duplicated code <b style="color:tomato"> makes the program large</b>.
+						<br>• Writing a long sequence of statements can be <b style="color:tomato"> time consuming</b>.
+						<br>• If part of the duplicated code has to be corrected or changed then the <b
+							style="color:tomato"> correction or change has to be done many times</b>.
+						<br> A repetition structure <b style="color:tomato"> causes a statement or set of statements to
+							execute repeatedly</b>.In this course, we will look at two broad categories of loops:
+						condition-controlled and count-controlled.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>CONDITION-CONTROLLED LOOP</h2>
+
+			</header>
+			<div class="content">
 
 				<section>
 					<header>
-						<h2>LECTURE</h2>
+						<h3>while</h3>
 					</header>
 					<div class="content">
-						<!-- <p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p> -->
-						<ul class="feature-icons">
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO1.html"> LECTURE - 01 </a></strong>  DATA TYPES, VARIABLES AND EXPRESSION </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO2.html"> LECTURE - 02 </a></strong>  IF-ELIF-ELSE DRAW.IO </li>
-							<!-- <li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO3.html"> LECTURE - 03 </a></strong>  REPETITION WHILE FOR </li> -->
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO4.html"> LECTURE - 04 </a></strong>  STRING </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO5.html"> LECTURE - 05 </a></strong>  FUNCTIONS </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO6.html"> LECTURE - 06 </a></strong>  FILES AND EXCEPTIONS </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO7.html"> LECTURE - 07 </a></strong>  LISTS AND TUPLES </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO8.html"> LECTURE - 08 </a></strong>  DICTIONARY AND SET </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO9.html"> LECTURE - 09 </a></strong>  PYGAME-ZERO </li>
+						CONDITION-CONTROLLED LOOP
+						<p>A re A <b style="color:tomato">condition-controlled loop</b> uses a true/false condition to
+							control the number of times that it repeats.
+							In Python you <b style="color:tomato">use the while statement to write a
+								condition-controlled loop</b></p>
 
-							
-							
-							<!-- <li class="icon solid fa-bolt">Etiam adipiscing</li>
-							<li class="icon solid fa-signal">Libero nullam</li>
-							<li class="icon solid fa-cog">Blandit condimentum</li>
-							<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-							<li class="icon solid fa-code">Nibh amet venenatis</li> -->
-						</ul>
+						<img src="/images/p3/p3-3.png" alt="" width="100%">
+						<img src="/images/p3/p3-4.png" alt="" width="100%">
+						<img src="/images/p3/p3-5.png" alt="" width="100%">
+						<img src="/images/p3/p3-6.png" alt="" width="100%">
+						<img src="/images/p3/p3-7.png" alt="" width="100%">
+
+						<b style="color:tomato">**all of the statements in the block are indented</b>
 					</div>
 				</section>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>						
-			
-		
+		</section>
 
 
-			
-			
-		
-	</body>
+		<section>
+			<header>
+				<h2>COUNT-CONTROLLED LOOP</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>for</h3>
+					</header>
+					<div class="content">
+						COUNT-CONTROLLED LOOP
+						<p>A <b style="color:tomato">count-controlled loop</b> repeats a specific number of times. In
+							Python you <b style="color:tomato"> use the for statement to write a count- controlled
+								loop</b>.</p>
+						<img src="/images/p3/p3-8.png" alt="" width="100%">
+						<b style="color:tomato">**all of the statements in the block are indented</b>
+						<img src="/images/p3/p3-9.png" alt="" width="100%">
+						<img src="/images/p3/p3-10.png" alt="" width="100%">
+						<img src="/images/p3/p3-11.png" alt="" width="100%">
+						<img src="/images/p3/p3-12.png" alt="" width="100%">
+						<img src="/images/p3/p3-13.png" alt="" width="100%">
+						<img src="/images/p3/p3-14.png" alt="" width="100%">
+						<img src="/images/p3/p3-15.png" alt="" width="100%">
+						<img src="/images/p3/p3-16.png" alt="" width="100%">
+						<img src="/images/p3/p3-17.png" alt="" width="100%">
+						<img src="/images/p3/p3-18.png" alt="" width="100%">
+						<img src="/images/p3/p3-19.png" alt="" width="100%">
+						<img src="/images/p3/p3-20.png" alt="" width="100%">
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>CALCULATING RUNNING TOTAL</h2>
+
+			</header>
+			<div class="content">
+				<p>
+					A running total is <b style="color:tomato">a sum of numbers that accumulates with each iteration of
+						a loop</b> . The variable used to keep the running total is called an <b style="color:red">
+						accumulator</b>.
+					<br> Programs that calculate the total of a series of numbers typically use two elements:
+					<br> • A <b style="color:tomato">loop that reads each number in the series</b>.
+					<br> • A <b style="color:tomato">variable that accumulates the total of the numbers as they are
+						read</b>.
+				</p>
+				<img src="/images/p3/p3-21.png" alt="" width="100%">
+				<img src="/images/p3/p3-22.png" alt="" width="100%">
+				<img src="/images/p3/p3-23.png" alt="" width="100%">
+				<img src="/images/p3/p3-24.png" alt="" width="100%">
+				<img src="/images/p3/p3-25.png" alt="" width="100%">
+			</div>
+		</section>
+
+
+
+		<section>
+			<header>
+				<h2>SENTINELS</h2>
+
+			</header>
+			<div class="content">
+				A sentinel is <b style="color:tomato">a special value that marks the end of a sequence of values</b>.
+				<br> • Simply <b style="color:tomato">ask the user, at the end of each loop iteration</b>, if there is
+				another value to process. If the sequence of values is long, however, asking this question at the end of
+				each loop iteration might make the program cumbersome for the user.
+				<br> • <b style="color:tomato">Ask the user at the beginning of the program how many items are in the
+					sequence</b>. This might also inconvenience the user, however. If the sequence is very long, and the
+				user does not know the number of items it contains, it will require the user to count them.</p>
+				<img src="/images/p3/p3-26.png" alt="" width="100%">
+				<img src="/images/p3/p3-27.png" alt="" width="100%">
+				<img src="/images/p3/p3-28.png" alt="" width="100%">
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>INPUT VALIDATION LOOPS</h2>
+
+			</header>
+			<div class="content">
+				Input validation is the process of inspecting data that has been input to a program, to make sure it is
+				valid before it is used in a computation. Input validation is commonly done with <b
+					style="color:tomato">a loop that iterates as long as an input variable references bad data</b> .
+				<img src="/images/p3/p3-29.png" alt="" width="100%">
+				<img src="/images/p3/p3-30.png" alt="" width="100%">
+				<img src="/images/p3/p3-31.png" alt="" width="100%">
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>NESTED LOOPS</h2>
+
+			</header>
+			<div class="content">
+				A <b style="color:tomato">loop that is inside another loop</b> is called a <b
+					style="color:tomato">nested loop</b>.
+				<img src="/images/p3/p3-32.png" alt="" width="100%">
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>PASS, CONTINUE, BREAK</h2>
+
+			</header>
+
+		</section>
+
+		<section>
+			<header>
+				<h3>CONTINUE</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p>CONTINUE</p>
+					<img src="images/p3/p3-33.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>BREAK</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p>BREAK</p>
+					<img src="images/p3/p3-34.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>PASS</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p>PASS</p>
+					<img src="images/p3/p3-35.png" alt="" width="100%" />
+					<p>We generally use it as a placeholder.
+						<br> Suppose we have a loop or a function that is not implemented yet,
+						but <b style="color:tomato">we want to implement it in the future.They cannot have an empty
+							body</b>. The interpreter would complain. So,
+						we use the <b style="color:tomato"> pass</b> statement to construct a body that does nothing.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<!-- Section -->
+
+		<section>
+			<header>
+				<h2>LECTURE</h2>
+			</header>
+			<div class="content">
+				<!-- <p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p> -->
+				<ul class="feature-icons">
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO1.html"> LECTURE - 01
+							</a></strong> DATA TYPES, VARIABLES AND EXPRESSION </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO2.html"> LECTURE - 02
+							</a></strong> IF-ELIF-ELSE DRAW.IO </li>
+					<!-- <li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO3.html"> LECTURE - 03 </a></strong>  REPETITION WHILE FOR </li> -->
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO4.html"> LECTURE - 04
+							</a></strong> STRING </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO5.html"> LECTURE - 05
+							</a></strong> FUNCTIONS </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO6.html"> LECTURE - 06
+							</a></strong> FILES AND EXCEPTIONS </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO7.html"> LECTURE - 07
+							</a></strong> LISTS AND TUPLES </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO8.html"> LECTURE - 08
+							</a></strong> DICTIONARY AND SET </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO9.html"> LECTURE - 09
+							</a></strong> PYGAME-ZERO </li>
+
+
+
+					<!-- <li class="icon solid fa-bolt">Etiam adipiscing</li>
+							<li class="icon solid fa-signal">Libero nullam</li>
+							<li class="icon solid fa-cog">Blandit condimentum</li>
+							<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
+							<li class="icon solid fa-code">Nibh amet venenatis</li> -->
+				</ul>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+
 </html>
