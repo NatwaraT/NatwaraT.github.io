@@ -1,89 +1,509 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>LECTURE - 09</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="style.css">
 
-		<style>
-			#more {display: none;}
-		</style>
+<head>
+	<title>LECTURE - 09</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="style.css">
 
-	</head>
-	<body class="is-preload">
+	<style>
+		#more {
+			display: none;
+		}
+	</style>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+</head>
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
+<body class="is-preload">
 
-							<h1>08</h1>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<h2>PYGAME-ZERO</h2>
-							<form>
-								<input type="button" value="Go back!" onclick="history.back()">
-							</form>
-						</header>
+		<!-- Intro -->
+		<section class="intro">
+			<header>
 
-						
-					
-					</section> 
-					
+				<h1>08</h1>
+
+				<h2>PYGAME-ZERO</h2>
+				<form>
+					<input type="button" value="Go back!" onclick="history.back()">
+				</form>
+			</header>
 
 
-						
-				<!-- Section -->
+
+		</section>
+
+
+
+		<section>
+			<header>
+				<h2>DICTIONARIES</h2>
+
+			</header>
+			<div class="content">
+
 				<section>
 					<header>
-						<h2>LECTURE</h2>
+						<h3>Introduction</h3>
 					</header>
 					<div class="content">
-						<!-- <p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p> -->
-						<ul class="feature-icons">
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO1.html"> LECTURE - 01 </a></strong>  DATA TYPES, VARIABLES AND EXPRESSION </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO2.html"> LECTURE - 02 </a></strong>  IF-ELIF-ELSE DRAW.IO </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO3.html"> LECTURE - 03 </a></strong>  REPETITION WHILE FOR </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO4.html"> LECTURE - 04 </a></strong>  STRING </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO5.html"> LECTURE - 05 </a></strong>  FUNCTIONS </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO6.html"> LECTURE - 06 </a></strong>  FILES AND EXCEPTIONS </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO7.html"> LECTURE - 07 </a></strong>  LISTS AND TUPLES </li>
-							<!-- <li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO8.html"> LECTURE - 08 </a></strong>  DICTIONARY AND SET </li> -->
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO9.html"> LECTURE - 09 </a></strong>  PYGAME-ZERO </li>
+						<b>DICTIONARIES</b>
+						<p>• <b style="color:tomato">Dictionary</b> : object that stores a collection of data
+							<br>- Each element consists of a key and a value
+							<br>- Often referred to as mapping of key to value
+							<br>- Key must be an immutable object
+							<br>- To retrieve a specific value, use the key associated with it
+							<br>- Format for creating a dictionary
+							<br> <b>dictionary = {key1:val1, key2:val2}</b>
+						</p>
 
-							
-							
-							<!-- <li class="icon solid fa-bolt">Etiam adipiscing</li>
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>ADD AND DELETE DICTIONARY</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3></h3>
+					</header>
+					<div class="content">
+						<p>• Dictionaries are mutable objects
+							<br>• Toaddanewkey-valuepair: <b style="color:tomato"> dictionary[key] = value</b>
+							<br>- If key exists in the dictionary, the value associated with it will be changed
+							<br>• Todeleteakey-valuepair: <b style="color:tomato">del dictionary[key]</b>
+							<br>- If key is not in the dictionary, KeyError exception is raised
+						</p>
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>INTRODICT.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>INTRODICT.PY</b></p>
+					<img src="images/p8/p8-1.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>DICTIONARY NUMBER OF ELEMENTS AND MIXING DATA TYPES</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p>• len function: used to obtain number of elements in a dictionary
+						<br>• Keys must be immutable objects, but associated values can be any type of object
+						<br> - One dictionary can include keys of several different immutable types
+						<br> • Values stored in a single dictionary can be of different types
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section>
+			<header>
+				<h3>CREATING AN EMPTY DICTIONARY AND USING FOR LOOP</h3>
+			</header>
+			<div class="content">
+				
+					<p>• To create an empty dictionary:
+						<br>• Use {}
+						<br>- Use built-in function dict()
+						<br>- Elements can be added to the dictionary as program executes
+						<br>• Use a for loop to iterate over a dictionary
+						<br>- General format: for key in dictionary:
+						<br> <b> for key in dictionary:</b>
+					</p>
+			</div>
+		</section>
+
+		
+
+		<section>
+			<header>
+				<h3>SOME DICTIONARY METHODS</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<img src="images/p8/p8-2.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>DICTIONARY EXERCISE</h3>
+			</header>
+			<div class="content">
+				<p><a href="
+					https://holypython.com/beginner-python-exercises/exercise-8-python-dictionaries/" style="color:rgb(255, 68, 0)" >Python Dictionary Exercises</a>
+			   </p>
+				<div class="gallery">
+					<img src="images/p8/p8-3.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>SET</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>Set Methods and Useful Built-in Functions</h3>
+					</header>
+					<div class="content">
+						<p>• Set: object that stores a collection of data in same way as mathematical set
+							<br>- All items must be unique
+							<br>- Set is unordered
+							<br>- Elements can be of different data types
+							<br>• len function: returns the number of elements in the set
+							<br>• Sets are mutable objects
+							<br>• <b>add</b> method:addsanelementtoaset
+							<br>• <b>update</b>  method: adds a group of elements to a set
+							<br>- Argument must be a sequence containing iterable elements, and each of the elements is added to the set
+							<br>• <b> remove</b>  and <b>discard</b>  methods: remove the specified item from the set
+							<br>- The item that should be removed is passed to both methods as an argument
+							<br>- Behave differently when the specified item is not found in the set
+							<br>- <b>remove</b>  method raises a  <b>KeyError</b>  exception
+							<br>- <b>discard</b>  method does not raise an exception
+							<br>• <b>clear</b>  method: clears all the elements of the set
+
+						</p>
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>FINDING THE UNION OF SETS</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>Set Methods and Useful Built-in Functions</h3>
+					</header>
+					<div class="content">
+						<p>• Union of two sets: a set that contains all the elements of both sets
+							<br>• To find the <b style="color:tomato"> union </b>of two sets:
+							<br>- Use the union method
+							<br>- Format: <b> set1.union(set2)</b>
+							<br>- Use the <b style="color:tomato"> | </b>operator
+							<br>- Format: <b> set1 | set2</b>
+							<br>- Both techniques return a new set which contains the union of both sets
+						</p>
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>FINDING THE INTERSECTION OF SETS</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>Set Methods and Useful Built-in Functions</h3>
+					</header>
+					<div class="content">
+						<p>• Intersection of two sets: a set that contains only the elements found in both sets
+							<br>• To find the intersection of two sets:
+							<br>- Use the <b style="color:tomato">  intersection </b> method
+							<br>- Format: <b> set1.intersection(set2)</b>
+							<br>- Use the <b style="color:tomato"> &</b>operator
+							<br>- Format: <b> set1 | set2</b>
+							<br>- Both techniques return a new set which contains the intersection of both sets
+						</p>
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>FINDING THE SYMMETRIC DIFFERENCE OF SETS</h3>
+			</header>
+			<div class="content">
+				<p>• Symmetric difference of two sets: a set that contains the elements that are not shared by the two sets
+					<br>• To find the symmetric difference of two sets:
+					<br>- Use the <b style="color:tomato">  symmetric_difference </b> method
+					<br>- Format: <b> set1.symmetric_difference(set2)</b>
+					<br>- Use the <b style="color:tomato"> ^</b>operator
+					<br>- Format: <b> set1 ^ set2</b>
+				</p>
+			</div>
+		</section>
+
+
+
+		<section>
+			<header>
+				<h3>FINDING SUBSETS AND SUPERSETS</h3>
+			</header>
+			<div class="content">
+				<p>• Set A is subset of set B if all the elements in set A are included in set B
+					<br>• To determine whether set A is subset of set B
+					<br>- Use the <b style="color:tomato">  issubset</b> method
+					<br>- Format: <b>  setA.issubset(setB)</b>
+					<br>- Use the <b style="color:tomato"> <=  </b>operator
+					<br>- Format: <b> setA <= setB</b>
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>FINDING SUBSETS AND SUPERSETS</h3>
+			</header>
+			<div class="content">
+				<p>• 
+					Set A is superset of set B if it contains all the elements of set B
+					<br>• To determine whether set A is superset of set B
+					<br>- Use the <b style="color:tomato">  issuperset</b> method
+					<br>- Format: <b>  setA.issuperset(setB)</b>
+					<br>- Use the <b style="color:tomato"> >=  </b>operator
+					<br>- Format: <b> setA >= setB</b>
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>SETINTRO.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>SALE_REPORT4.PY(TRY-EXCEPT-ELSE)</b></p>
+					<img src="images/p8/p8-4.png" alt="" width="100%" />
+					<img src="images/p8/p8-5.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>SET OPERATION</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<img src="images/p8/p8-6.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>SERIALIZING OBJECTS</h2>
+				
+			</header>
+			<div class="content">
+			
+				<section>
+					<header>
+						<h3>Serializing Objects</h3>
+					</header>
+					<div class="content">
+						<b>SERIALISING OBJECTS</b>
+						<p><br>•  Serialize an object: convert the object to a stream of bytes that can easily be stored in a file
+							<br>• Pickling: serializing an object
+							<br>• To pickle an object:
+							<br>- Import the pickle module
+							<br>- Open a file for binary writing
+							<br>- Call the pickle.dump function
+							<br>- Format: pickle.dump(object, file)
+							<br>- Close the file
+							<br>• You can pickle multiple objects to one file prior to closing the file
+							<br>• Unpickling: retrieving pickled object
+							<br>• To unpickle an object:
+							<br>- Import the <b>pickle</b>  module
+							<br>- Open a file for binary writing
+							<br>- Call the <b> pickle.load</b> function
+							<br>- Format: <b>pickle.load(file)</b> 
+							<br>- Close the file
+							<br>• You can unpickle multiple objects from the file
+						</p>
+						
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>PICKLE_OBJECTS.PY</h3>
+			</header>
+			<div class="content">
+				<p><b>PICKLE_OBJECTS.PY</b></p>
+				<div class="gallery">
+					<img src="images/p8/p8-7.png" alt="" width="100%" />
+					<img src="images/p8/p8-8.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>UNPICKLE_OBJECTS.PY</h3>
+			</header>
+			<div class="content">
+				<p><b>UNPICKLE_OBJECTS.PY</b></p>
+				<div class="gallery">
+					<img src="images/p8/p8-9.png" alt="" width="100%" />
+					<img src="images/p8/p8-10.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+
+		<section>
+			<header>
+				<h2>SUMMARY</h2>
+				
+			</header>
+			<div class="content">
+			
+				<section>
+					<header>
+						<h3>SUMMARY</h3>
+					</header>
+					<div class="content">
+						
+						<p><b>Dictionaries, including:</b>
+							<br>• Creating dictionaries
+							<br>• Inserting, retrieving, adding, and deleting key-value pairs
+							<br>• for loops and in and not in operators
+							<br>• Dictionary methods
+							<br><b>Sets:</b>
+							<br>• Creating sets
+							<br>• Adding elements to and removing elements from sets
+							<br>• Finding set union, intersection, difference and symmetric difference Finding subsets and supersets
+							<br><b>Serializing objects</b>
+							<br>• Pickling and unpickling objects
+						</p>
+						
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>LECTURE</h2>
+			</header>
+			<div class="content">
+				<!-- <p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p> -->
+				<ul class="feature-icons">
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO1.html"> LECTURE - 01
+							</a></strong> DATA TYPES, VARIABLES AND EXPRESSION </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO2.html"> LECTURE - 02
+							</a></strong> IF-ELIF-ELSE DRAW.IO </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO3.html"> LECTURE - 03
+							</a></strong> REPETITION WHILE FOR </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO4.html"> LECTURE - 04
+							</a></strong> STRING </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO5.html"> LECTURE - 05
+							</a></strong> FUNCTIONS </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO6.html"> LECTURE - 06
+							</a></strong> FILES AND EXCEPTIONS </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO7.html"> LECTURE - 07
+							</a></strong> LISTS AND TUPLES </li>
+					<!-- <li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO8.html"> LECTURE - 08 </a></strong>  DICTIONARY AND SET </li> -->
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO9.html"> LECTURE - 09
+							</a></strong> PYGAME-ZERO </li>
+
+
+
+					<!-- <li class="icon solid fa-bolt">Etiam adipiscing</li>
 							<li class="icon solid fa-signal">Libero nullam</li>
 							<li class="icon solid fa-cog">Blandit condimentum</li>
 							<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
 							<li class="icon solid fa-code">Nibh amet venenatis</li> -->
-						</ul>
-					</div>
-				</section>
-
-				
+				</ul>
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>						
-			
-		
+		</section>
 
 
-			
-			
-		
-	</body>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+
 </html>
