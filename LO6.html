@@ -1,89 +1,711 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>LECTURE - 06</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="style.css">
 
-		<style>
-			#more {display: none;}
-		</style>
+<head>
+	<title>LECTURE - 06</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="style.css">
 
-	</head>
-	<body class="is-preload">
+	<style>
+		#more {
+			display: none;
+		}
+	</style>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+</head>
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
+<body class="is-preload">
 
-							<h1>02</h1>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<h2>FILES AND EXCEPTIONS</h2>
-							<form>
-								<input type="button" value="Go back!" onclick="history.back()">
-							</form>
-						</header>
+		<!-- Intro -->
+		<section class="intro">
+			<header>
 
-						
-					
-					</section> 
-					
+				<h1>06</h1>
+
+				<h2>FILES AND EXCEPTIONS</h2>
+				<form>
+					<input type="button" value="Go back!" onclick="history.back()">
+				</form>
+			</header>
 
 
-						
-				<!-- Section -->
+
+		</section>
+
+
+		<section>
+			<header>
+				<h2>FILES</h2>
+
+
+			</header>
+			<div class="content">
 
 				<section>
 					<header>
-						<h2>LECTURE</h2>
+
+						<h3>FILE INPUT/OUTPUT</h3>
 					</header>
 					<div class="content">
-						<!-- <p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p> -->
-						<ul class="feature-icons">
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO1.html"> LECTURE - 01 </a></strong>  DATA TYPES, VARIABLES AND EXPRESSION </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO2.html"> LECTURE - 02 </a></strong>  IF-ELIF-ELSE DRAW.IO </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO3.html"> LECTURE - 03 </a></strong>  REPETITION WHILE FOR </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO4.html"> LECTURE - 04 </a></strong>  STRING </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO5.html"> LECTURE - 05 </a></strong>  FUNCTIONS </li>
-							<!-- <li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO6.html"> LECTURE - 06 </a></strong>  FILES AND EXCEPTIONS </li> -->
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO7.html"> LECTURE - 07 </a></strong>  LISTS AND TUPLES </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO8.html"> LECTURE - 08 </a></strong>  DICTIONARY AND SET </li>
-							<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO9.html"> LECTURE - 09 </a></strong>  PYGAME-ZERO </li>
+						<p> • For program to <b style="color:tomato">retain data between the times it is run</b> , you
+							must save the data
+							<br> • Data is saved to a file, typically on computer disk
+							<br> • Saved data can be retrieved and used at a later time
+							<br> • <b style="color:tomato"> "Writing data to" </b>: saving data on a file
+							<br> • <b style="color:tomato">Output file</b>: a file that data is written to
+							<br> • <b style="color:tomato">"Reading data from" </b>: process of retrieving data from a
+							file Input file: a file from which data is read
+						</p>
+						<p><b>WRITE DATA TO FILE</b></p>
+						<img src="images/p6/p6-1.png" alt="" width="100%" /></a>
+						<p><b>READ DATA FROM FILE</b></p>
+						<img src="images/p6/p6-2.png" alt="" width="100%" /></a>
 
-							
-							
-							<!-- <li class="icon solid fa-bolt">Etiam adipiscing</li>
-							<li class="icon solid fa-signal">Libero nullam</li>
-							<li class="icon solid fa-cog">Blandit condimentum</li>
-							<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-							<li class="icon solid fa-code">Nibh amet venenatis</li> -->
-						</ul>
 					</div>
 				</section>
 
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>						
-			
-		
+		<section>
+			<header>
+				<h3>TYPE OF FILES</h3>
+			</header>
+			<div class="content">
+				<p>In general, two types of files
+					<br> 1. <b style="color:tomato">Text file </b>:contains data that has been encoded as text
+					<br> 2. <b style="color:tomato">Binary file </b>:contains data that has not been converted to text
+					<br> Two ways to access data stored in file
+					<br> 1. <b style="color:tomato">Sequential access </b>: file read sequentially from beginning to
+					end, can't skip ahead
+					<br> 2. <b style="color:tomato">Direct access</b> : can jump directly to any piece of data in the
+					file
+				</p>
+			</div>
+		</section>
 
 
-			
-			
-		
-	</body>
+		<section>
+			<header>
+				<h3>FILES</h3>
+			</header>
+			<div class="content">
+				<p>There are always three steps that must be taken when a file is used by a program.
+					<br> • <b style="color:tomato">Open the file </b>- Opening a file creates a connection between the
+					file and the program. Opening an output file usually creates the file on the disk and allows the
+					program to write data to it. Opening an input file allows the program to read data from the file.
+					<br> • <b style="color:tomato">Process the file </b> - In this step data is either written to the
+					file (if it is an output file) or read from the file (if it is an input file).
+					<br> • <b style="color:tomato">Close the file </b>- When the program is finished using the file, the
+					file must be closed. Closing a file disconnects the file from the program.
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>FILES</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>Input / Output</h3>
+					</header>
+
+				</section>
+
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>OPEN FILE</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>file_variable = open(filename , mode)</b></p>
+					<img src="images/p6/p6-3.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>FILE MODE</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>file_variable = open(filename , mode)</b></p>
+					<img src="images/p6/p6-4.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>FILEWRITE.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>FILEWRITE.PY</b></p>
+					<img src="images/p6/p6-5.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>FILEREAD.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>FILEREAD.PY</b></p>
+					<img src="images/p6/p6-6.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>READLINE.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>READLINE.PY</b></p>
+					<img src="images/p6/p6-7.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>STRIP_NEWLINE.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>STRIP_NEWLINE.PY</b></p>
+					<img src="images/p6/p6-8.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+
+		<section>
+			<header>
+				<h3>WRITE_NAME.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>WRITE_NAME.PY</b></p>
+					<img src="images/p6/p6-9.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>WRITE_NUMBERS.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>WRITE_NUMBERS.PY</b></p>
+					<img src="images/p6/p6-10.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>READ_NUMBERS.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>READ_NUMBERS.PY</b></p>
+					<img src="images/p6/p6-10.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h2>FILES</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>Using Loop to Process File</h3>
+					</header>
+					<div class="content">
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>DETECTING END OF FILE</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<img src="images/p6/p6-11.png" alt="" width="100%" />
+					<img src="images/p6/p6-10.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>WRITE_SALES.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>WRITE_SALES.PY</b></p>
+					<img src="images/p6/p6-12.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>READ_SALES.PY (WHILE LOOP)</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>READ_SALES.PY (WHILE LOOP)</b></p>
+					<img src="images/p6/p6-13.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>READ_SALES2.PY(FOR LOOP)</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>READ_SALES2.PY(FOR LOOP)</b></p>
+					<img src="images/p6/p6-14.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>FILES</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>Processing Record</h3>
+					</header>
+					<div class="content">
+						<p><b>PROCESSING RECORDSs</b>
+							<br> • <b style="color:tomato">Record</b>: set of data that describes one item
+							<br> • <b style="color:tomato">Field</b>: single piece of data within a record
+							<br> • <b style="color:tomato"> Write record</b> to sequential access file by writing the
+							fields one after the other
+							<br> • <b style="color:tomato"> Read record </b>from sequential access file by reading each
+							field until record complete
+						</p>
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>RECORD</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<img src="images/p6/p6-15.png" alt="" width="100%" />
+					<img src="images/p6/p6-16.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>PROCESSING RECORDS</h3>
+			</header>
+			<div class="content">
+				<p>When working with records, it is also important to be able to:
+					<br> • Add records
+					<br> • Display records
+					<br> • Search for a specific record Modify records
+					<br> • Delete records
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>SAVE_EMP_RECORDS.PY (WHILE LOOP)</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>SAVE_EMP_RECORDS.PY (WHILE LOOP)</b></p>
+					<img src="images/p6/p6-17.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>IMPORT OS</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<img src="images/p6/p6-18.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>FILES</h2>
+
+			</header>
+			<div class="content">
+
+				<section>
+					<header>
+						<h3>Exceptions</h3>
+					</header>
+				</section>
+
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>GROSS_PAY1.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>GROSS_PAY1.PY</b></p>
+					<img src="images/p6/p6-19.png" alt="" width="100%" />
+					<img src="images/p6/p6-20.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>EXCEPTION</h3>
+			</header>
+			<div class="content">
+				<p>• <b style="color:tomato"> Exception</b>: error that occurs while a program is running
+					<br> • Usually causes program to abruptly halt
+					<br> • <b style="color:tomato">Traceback</b>: error message that gives information regarding line
+					numbers that caused the exception
+					<br> • Indicates the type of exception and brief description of the error that caused exception to
+					be raised
+					<br> • Exception handler: code that responds when exceptions are raised and prevents program from
+					crashing
+					<br> • In Python, written as try/except statement
+					<br> • General format:
+					<br> <b>try: statements
+						<br>except exceptionName:
+						<br>statements</b>
+					<br> • Try suite: statements that can potentially raise an exception
+					<br> • Handler: statements contained in <b>except </b> block
+
+				</p>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>GROSS_PAY2.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>GROSS_PAY2.PY</b></p>
+					<img src="images/p6/p6-21.png" alt="" width="100%" />
+					<img src="images/p6/p6-22.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>EXCEPTION</h3>
+			</header>
+			<div class="content">
+				<p>• Many exceptions can be prevented by careful coding
+					<br> • Example: input validation
+					<br> • Usually involve a simple decision construct
+					<br> • Some exceptions cannot be avoided by careful coding
+					<br> • <b>Examples</b>
+					<br> • Trying to convert non-numeric string to an integer
+					<br> • Trying to open for reading a file that doesn't exist
+
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>GROSS_PAY2.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>GROSS_PAY2.PY</b></p>
+					<img src="images/p6/p6-23.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>EXCEPTION</h3>
+			</header>
+			<div class="content">
+				<p>• If statement in try suite raises exception:
+					<br> • Exception specified in except clause:
+					<br> - Handler immediately following except clause executes
+					<br> - Continue program after try/except statement
+					<br> • Other exceptions:
+					<br> - Program halts with traceback error message
+					<br> • If no exception is raised, handlers are skipped
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>DISPLAY_FILE.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>DISPLAY_FILE.PY</b></p>
+					<img src="images/p6/p6-24.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>HANDLING MULTIPLE EXCEPTIONS</h3>
+			</header>
+			<div class="content">
+				<p>• Often code in try suite can throw more than one type of exception
+					<br> • Need to write <b>except</b> clause for each type of exception that
+					needs to be handled
+					<br> • An except clause that does not list a specific exception will handle any exception that is
+					raised in the try suite
+					<br> • Should always be last in a series of <b>except </b> clauses
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>SALE_REPORT.PY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>SALE_REPORT.PY</b></p>
+					<img src="images/p6/p6-25.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</h3>
+			</header>
+			<div class="content">
+				<p>• Exception object: object created in memory when an exception is thrown
+					<br> • Usually contains default error message pertaining to the exception
+					<br> • Can assign the <b>exception</b> object to a variable in an except clause
+					<br> - Example: <b> except ValueError as err:</b>
+					<br> • Can pass exception object variable to print function to display
+					the default error message
+				</p>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>GROSS_PAY3.PY(DISPLAY DEFAULT ERROR MSG.)</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>SALE_REPORT.PY</b></p>
+					<img src="images/p6/p6-26.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>THE ELSE CLAUSE</h3>
+			</header>
+			<div class="content">
+				<p>• <b> try/except </b>statement may include an optional else clause, which appears after all the
+					except clauses
+					<br> • Aligned with <b>try</b> and <b> except</b> clauses
+					<br> • Syntax similar to <b>else</b> clause in decision structure
+					<br> • <b style="color:tomato">
+						Else suite</b>: block of statements executed after statements in try suite, only if no
+					exceptions were raised
+					<br> • If exception was raised, the else suite is skipped
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>SALE_REPORT4.PY(TRY-EXCEPT-ELSE)</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>SALE_REPORT4.PY(TRY-EXCEPT-ELSE)</b></p>
+					<img src="images/p6/p6-27.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h3>THE FINALLY CLAUSE</h3>
+			</header>
+			<div class="content">
+				<p>• try/except statement may include an optional <b> finally </b>clause, which appears after all the
+					<b>except</b> clauses
+					<br> • Aligned with <b> try</b> and <b> except</b> clauses
+					<br> • General format:
+					<br> <b> finally: <br> statements</b>
+					<br> • <b style="color:tomato">
+						Finally suite</b>: block of statements ater thfe <b> finally </b>clause
+					<br> • Execute whether an exception occurs or not
+					<br> • Purpose is to perform cleanup before exiting
+				</p>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>TRY-EXCEPT-FINALLY</h3>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<p><b>TRY-EXCEPT-FINALLY</b></p>
+					<img src="images/p6/p6-27.png" alt="" width="100%" />
+					<img src="images/p6/p6-28.png" alt="" width="100%" />
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<header>
+				<h3>WHAT IF AN EXCEPTION IS NOT HANDLED?</h3>
+			</header>
+			<div class="content">
+				<p>• Two ways for exception to go unhandled:
+					<br> • No except clause specifying exception of the right type
+					<br> • Exception raised outside a try suite
+					<br> • In both cases, exception will cause the program to halt
+					<br> • Python documentation provides information about exceptions that can be raised by different
+					functions
+				</p>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+		<!-- Section -->
+
+		<section>
+			<header>
+				<h2>LECTURE</h2>
+			</header>
+			<div class="content">
+				<!-- <p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p> -->
+				<ul class="feature-icons">
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO1.html"> LECTURE - 01
+							</a></strong> DATA TYPES, VARIABLES AND EXPRESSION </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO2.html"> LECTURE - 02
+							</a></strong> IF-ELIF-ELSE DRAW.IO </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO3.html"> LECTURE - 03
+							</a></strong> REPETITION WHILE FOR </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO4.html"> LECTURE - 04
+							</a></strong> STRING </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO5.html"> LECTURE - 05
+							</a></strong> FUNCTIONS </li>
+					<!-- <li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO6.html"> LECTURE - 06 </a></strong>  FILES AND EXCEPTIONS </li> -->
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO7.html"> LECTURE - 07
+							</a></strong> LISTS AND TUPLES </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO8.html"> LECTURE - 08
+							</a></strong> DICTIONARY AND SET </li>
+					<li class="icon solid fa-laptop"> <strong></strong> <strong> <a href="/LO9.html"> LECTURE - 09
+							</a></strong> PYGAME-ZERO </li>
+
+
+
+					<!-- <li class="icon solid fa-bolt">Etiam adipiscing</li>
+							<li class="icon solid fa-signal">Libero nullam</li>
+							<li class="icon solid fa-cog">Blandit condimentum</li>
+							<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
+							<li class="icon solid fa-code">Nibh amet venenatis</li> -->
+				</ul>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+
 </html>
